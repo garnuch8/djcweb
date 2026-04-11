@@ -1,0 +1,46 @@
+{
+  "name": "DJ CICHY — Szymon Cicherski",
+  "short_name": "DJ CICHY",
+  "description": "Profesjonalna oprawa muzyczna wesel, urodzin i eventów. Kutno, Łódź, Płock, Włocławek.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0d0b",
+  "theme_color": "#3ca85c",
+  "orientation": "portrait-primary",
+  "lang": "pl",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "label": "DJ CICHY — strona główna"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Zarezerwuj termin",
+      "url": "/#contact",
+      "description": "Przejdź do formularza kontaktowego"
+    },
+    {
+      "name": "Galeria",
+      "url": "/#galeria",
+      "description": "Zobacz zdjęcia z eventów"
+    }
+  ]
+}

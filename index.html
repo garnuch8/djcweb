@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DJ CICHY — Szymon Cicherski. Profesjonalna oprawa muzyczna wesel, urodzin, studniówek i eventów. Łódź, Płock, Włocławek, Kutno.">
+
+<meta property="og:title" content="DJ CICHY · Szymon Cicherski — DJ na Wesele i Eventy">
+<meta property="og:description" content="Profesjonalna oprawa muzyczna wesel, urodzin i eventów firmowych. Kutno, Łódź, Płock, Włocławek. Rezerwacje 2026 — sprawdź dostępność.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DJ CICHY — Szymon Cicherski, profesjonalna oprawa muzyczna">
+<meta property="og:url" content="https://twojadomena.pl">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="DJ CICHY">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DJ CICHY · Szymon Cicherski — DJ na Wesele i Eventy">
+<meta name="twitter:description" content="Profesjonalna oprawa muzyczna wesel, urodzin i eventów. Kutno, Łódź, Płock, Włocławek. Rezerwacje 2026.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+
+<link rel="canonical" href="https://twojadomena.pl">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Szymon Cicherski">
+<meta name="geo.region" content="PL-LD">
+<meta name="geo.placename" content="Kutno">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3ca85c">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+
+<meta name="view-transition" content="same-origin">
+<title>DJ CICHY · Szymon Cicherski — Wesela, Urodziny, Eventy | Kutno, Łódź</title>
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" as="style">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://twojadomena.pl/#business",
+  "name": "DJ CICHY - Szymon Cicherski",
+  "description": "Profesjonalna oprawa muzyczna wesel, urodzin, studniówek i eventów firmowych.",
+  "url": "https://twojadomena.pl",
+  "telephone": "+48000000000",
+  "priceRange": "$$",
+  "currenciesAccepted": "PLN",
+  "paymentAccepted": "Cash, Bank Transfer",
+  "foundingDate": "2019",
+  "image": "assets/og-image.jpg",
+  "logo": "assets/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kutno",
+    "addressRegion": "Łódź",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.2319,
+    "longitude": 19.3643
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Kutno"},
+    {"@type": "City", "name": "Łódź"},
+    {"@type": "City", "name": "Płock"},
+    {"@type": "City", "name": "Włocławek"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Oprawa muzyczna",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wesele"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Urodziny"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Studniówka"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Event firmowy"}}
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "ratingCount": "47"
+  },
+  "sameAs": []
+}
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Przejdź do głównej treści</a>
+
+<div class="custom-cursor" id="custom-cursor"></div>
+<div id="scroll-progress"></div>
+
+<div id="intro" aria-hidden="true">
+  <div class="loader"></div>
+  <p class="intro-tag">Oprawa Muzyczna</p>
+  <div class="intro-name">Szymon<br><em>Cicherski</em></div>
+  <p class="intro-sub">DJ CICHY</p>
+  <div class="intro-line"></div>
+</div>
+
+<nav id="nav" aria-label="Nawigacja główna">
+  <a href="/" class="nav-logo-link" aria-label="Strona główna DJ Cichy">
+    <img src="assets/logo.png" alt="DJ Cichy" class="nav-logo-img">
+  </a>
+  <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">O Mnie</a>
+    <a href="#repertuar">Wideo & Muzyka</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#opinie-real">Opinie</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="btn-nav">Zarezerwuj</a>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="hero" id="home">
+    <div class="hero-video-wrap" id="hero-video-wrap">
+      <img 
+        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1920&auto=format&fit=crop&fm=webp" 
+        alt="" 
+        class="hero-bg-video hero-poster" 
+        id="hero-poster"
+        fetchpriority="high"
+      >
+      <video id="hero-video" loop muted playsinline class="hero-bg-video" style="opacity:0; transition: opacity 1s ease;" data-src="https://cdn.pixabay.com/video/2020/05/24/40061-424756855_large.mp4">
+      </video>
+    </div>
+
+    <button id="video-toggle-btn" class="video-toggle-btn" aria-label="Zatrzymaj wideo w tle">⏸</button>
+
+    <div class="hero-content gs-reveal">
+      <span class="hero-tag">Kutno, Łódź, Płock, Włocławek · od 2019</span>
+      <h1 class="hero-title gs-reveal gs-split-text" aria-label="DJ Cichy - Twój DJ na wesele i event 2026">
+        <img src="assets/logo.png" alt="DJ Cichy Logo" class="hero-logo-image">
+        <span class="hero-year">2026</span>
+      </h1>      
+      <p class="gs-reveal">Wesela, urodziny, studniówki, eventy firmowe. Muzyka dobrana do każdego gościa — od pierwszego walca po ostatni taniec.</p>
+      <div class="hero-actions gs-reveal">
+        <a href="#contact" class="magnetic-wrap" aria-label="Przejdź do formularza kontaktowego">
+          <div class="btn-primary">Zapytaj o termin</div>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Odkryj więcej</div>
+    <canvas id="audio-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <div class="sr-only">
+    <h2>Moje atuty to:</h2>
+    <ul>
+        <li>Pełen parkiet</li>
+        <li>Eleganckie prowadzenie</li>
+        <li>Indywidualny scenariusz</li>
+        <li>Brak żenujących zabaw</li>
+        <li>Muzyka bez przerw</li>
+        <li>Profesjonalne nagłośnienie</li>
+        <li>Efektowny dźwięk i światło</li>
+    </ul>
+  </div>
+  
+  <div class="marquee-strip gs-reveal" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">PEŁEN PARKIET <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">ELEGANCKIE PROWADZENIE <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">INDYWIDUALNY SCENARIUSZ <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">BRAK ŻENUJĄCYCH ZABAW <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">MUZYKA BEZ PRZERW <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">PROFESJONALNE NAGŁOŚNIENIE <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">EFEKTOWNY DŹWIĘK I ŚWIATŁO <span class="marquee-sep">✦</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-left gs-reveal-left">
+          <span class="sec-label">O Mnie</span>
+          <h2 class="sec-title">Muzyka,<br>która zostaje<br>z Tobą<em>.</em></h2>
+          <div class="about-body">
+            <p>Jestem Szymon Cicherski — DJ i wodzirej działający pod pseudonimem <strong>CICHY</strong>. Gram w Kutnie, Łodzi, Płocku i okolicach od 2019 roku, specjalizując się w kompleksowej oprawie muzycznej wesel, urodzin, studniówek i eventów firmowych.</p>
+            <p>Każde wydarzenie jest inne, dlatego zawsze dobieram muzykę pod konkretny klimat i publiczność. Nie odgrywam gotowych list — czuję energię parkietu i reaguję na nią na żywo.</p>
+            <p>Zanim zagramy razem, spotykamy się i szczegółowo omawiamy Twój event. Dzięki temu w dniu imprezy możesz być po prostu gościem na własnym weselu.</p>
+          </div>
+          <div class="about-stats">
+            <div><div class="stat-num gs-counter" id="exp-counter" data-target="7">0</div><div class="stat-lbl">Lat doświadczenia</div></div>
+            <div><div class="stat-num gs-counter" data-target="150">0</div><div class="stat-lbl">Eventów</div></div>
+            <div><div class="stat-num">5.0</div><div class="stat-lbl">Średnia ocen</div></div>
+          </div>
+        </div>
+        <div class="about-right gs-parallax">
+          <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=800&auto=format&fit=crop&fm=webp" alt="Szymon Cicherski DJ Cichy" class="about-profile-img js-tilt" loading="lazy">
+          <blockquote class="about-quote">"Gram tak, żeby nikt nie siedział przy stołach."</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="repertuar">
+    <div class="wrap">
+      <div class="rep-grid">
+        <div class="rep-left gs-reveal">
+          <span class="sec-label">Repertuar & Media</span>
+          <h2 class="sec-title">Posłuchaj<br>jak <em>gram</em></h2>
+          <div class="about-body">
+            <p>Najlepiej sprawdzić DJ-a w akcji. Poniżej znajdziesz mój promomix, który oddaje energię, jaką staram się przekazać na parkiecie.</p>
+          </div>
+          
+          <div class="custom-audio-wrapper">
+            <h4>Live Promo Mix <span id="promo-year">2026</span></h4>
+            <audio id="dj-audio" src="music/DJ_CICHY_-_Promo_Mix_2026.mp3" preload="metadata"></audio>
+            
+            <div class="audio-controls">
+              <button class="play-btn" id="playBtn" aria-label="Graj/Pauza">▶</button>
+              <div class="audio-time" id="currentTime">0:00</div>
+              <div class="audio-progress-container" id="progressContainer" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Pasek postępu utworu" tabindex="0">
+                <div class="audio-progress" id="progressBar"></div>
+              </div>
+              <div class="audio-time" id="durationTime">0:00</div>
+            </div>
+            
+            <div class="volume-controls">
+              <span style="font-size: 14px;" aria-hidden="true">🔊</span>
+              <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="0.7" aria-label="Głośność">
+            </div>
+          </div>
+        </div>
+        
+        <div class="rep-right gs-stagger">
+          <div class="genre-card" data-genre="pop">
+            <div class="genre-icon">🎵</div>
+            <h3>Pop & Disco</h3>
+            <p>Hity od lat 70. po najnowsze radiowe przeboje.</p>
+            <div class="genre-tags"><span>ABBA</span><span>80s</span><span>Chartsy</span></div>
+          </div>
+          <div class="genre-card" data-genre="latino">
+            <div class="genre-icon">🔥</div>
+            <h3>Latino & House</h3>
+            <p>Gorące rytmy do tańca i mocniejsze klubowe brzmienia.</p>
+            <div class="genre-tags"><span>Reggaeton</span><span>Deep House</span><span>Salsa</span></div>
+          </div>
+          <div class="genre-card" data-genre="rock">
+            <div class="genre-icon">🎸</div>
+            <h3>Rock & Alternatywa</h3>
+            <p>Od klasyków rocka po taneczne kawałki z pazurem.</p>
+            <div class="genre-tags"><span>Klasyk</span><span>Indie</span><span>Dance-rock</span></div>
+          </div>
+          <div class="genre-card" data-genre="polish">
+            <div class="genre-icon">🇵🇱</div>
+            <h3>Polskie Klasyki</h3>
+            <p>Muzyka, którą śpiewają wszyscy, od Krawczyka po Podsiadło.</p>
+            <div class="genre-tags"><span>Podsiadło</span><span>Krawczyk</span><span>Biesiadne</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="galeria">
+    <div class="wrap">
+      <div class="sec-header center gs-reveal">
+        <span class="sec-label">Z życia na żywo</span>
+        <h2 class="sec-title">Moja <em>Galeria</em></h2>
+      </div>
+    </div>
+
+    <div class="gallery-swiper-outer gs-reveal">
+      <div class="swiper gallerySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Tłum tańczący na weselu" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Wesele</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1533174000224-6a8b2438b320?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1533174000224-6a8b2438b320?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Sprzęt DJ-ski i oświetlenie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Setup</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1470229722913-7c090be5f524?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c090be5f524?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Światła na parkiecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Event</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Efekty specjalne podczas pierwszego tańca" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Pierwszy Taniec</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=900&auto=format&fit=crop&fm=webp" alt="DJ przy konsolecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Konsola DJ</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1598387993441-a364f854cffd?q=80&w=1920&auto=format&fit=crop&fm=webp">
+              <div class="gallery-slide-img-wrap">
+                <img src="https://images.unsplash.com/photo-1598387993441-a364f854cffd?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Parkiet taneczny" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+              </div>
+              <div class="gallery-slide-info">
+                <span class="gallery-slide-label">Parkiet</span>
+                <span class="gallery-slide-zoom" aria-hidden="true">⊕</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-swiper-pagination swiper-pagination"></div>
+      </div>
+
+      <div class="gallery-nav-wrap">
+        <button class="gallery-nav gallery-nav--prev" id="gallery-prev" aria-label="Poprzednie zdjęcie">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="gallery-nav gallery-nav--next" id="gallery-next" aria-label="Następne zdjęcie">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" hidden>
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Zamknij">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img id="lightbox-img" src="" alt="" class="lightbox-img">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <section id="oferta">
+    <div class="wrap gs-reveal">
+      <div class="sec-header">
+        <span class="sec-label">Oferta</span>
+        <h2 class="sec-title">Co zyskujesz,<br>wybierając <em>DJ CICHY</em>?</h2>
+      </div>
+      <div class="grid-3 gs-stagger">
+        <div class="scard js-tilt" data-tilt-max="5" data-tilt-speed="400">
+          <div class="scard-icon" aria-hidden="true">I</div>
+          <h3>Profesjonalne prowadzenie</h3>
+          <p>Prowadzę przyjęcie naturalnie, z klasą i zaangażowaniem. Dbam o płynność każdego punktu programu — od wesela po last dance.</p>
+        </div>
+        <div class="scard js-tilt" data-tilt-max="5" data-tilt-speed="400">
+          <div class="scard-icon" aria-hidden="true">II</div>
+          <h3>Muzyka dla każdego</h3>
+          <p>Dobieram repertuar pod Twoich gości — zarówno hit, który zna babcia, jak i to, czego słucha młodzież. Parkiet jest pełny całą noc.</p>
+        </div>
+        <div class="scard js-tilt" data-tilt-max="5" data-tilt-speed="400">
+          <div class="scard-icon" aria-hidden="true">III</div>
+          <h3>Profesjonalny sprzęt</h3>
+          <p>Dysponuję najwyższej klasy nagłośnieniem i oświetleniem. Doskonały dźwięk i klimatyczne światło to fundament każdego eventu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opinie" style="overflow: hidden;">
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="vs">
+    <div class="wrap">
+      <div class="sec-header center gs-reveal">
+        <span class="sec-label">Dlaczego DJ Cichy?</span>
+        <h2 class="sec-title">Nie każdy DJ<br>jest <em>taki sam</em></h2>
+      </div>
+      <div class="vs-table gs-reveal">
+        <div class="vs-header">
+          <div class="vs-col vs-col--feature"></div>
+          <div class="vs-col vs-col--bad">Przypadkowy DJ</div>
+          <div class="vs-col vs-col--good">DJ CICHY</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Indywidualne podejście</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Gotowa lista piosenek</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Scenariusz pod Ciebie</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Zabawy oczepinowe</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Krępujące konkursy</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Ze smakiem i klasą</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Czytanie parkietu</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Automatyczny playlist</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Reaguje na żywo</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Konsultacja przed eventem</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Rozmowa telefoniczna</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Szczegółowe spotkanie</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Sprzęt</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Nieznany standard</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Profesjonalne audio + light</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Doświadczenie</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Brak weryfikacji</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> 7 lat, 150+ eventów</div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-col vs-col--feature">Przerwy w muzyce</div>
+          <div class="vs-col vs-col--bad"><span class="vs-no">✗</span> Cisza między utworami</div>
+          <div class="vs-col vs-col--good"><span class="vs-yes">✓</span> Muzyka bez przerw</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="quiz">
+    <div class="wrap">
+      <div class="sec-header center gs-reveal">
+        <span class="sec-label">Poznaj swój styl</span>
+        <h2 class="sec-title">Jaka muzyka<br>dla <em>Ciebie</em>?</h2>
+      </div>
+      <div class="quiz-wrap gs-reveal" id="quiz-wrap">
+        <div class="quiz-step active" data-step="1">
+          <p class="quiz-question">Jakie wydarzenie planujesz?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="wesele">💍 Wesele</button>
+            <button class="quiz-opt" data-val="urodziny">🎂 Urodziny</button>
+            <button class="quiz-opt" data-val="studniowka">🎓 Studniówka</button>
+            <button class="quiz-opt" data-val="firmowy">🏢 Event firmowy</button>
+          </div>
+        </div>
+        <div class="quiz-step" data-step="2">
+          <p class="quiz-question">Jaka jest atmosfera, o której marzysz?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="elegancja">✨ Elegancja i wzruszenie</button>
+            <button class="quiz-opt" data-val="szalenstwo">🔥 Szaleństwo do rana</button>
+            <button class="quiz-opt" data-val="balans">⚖️ Balans — i jedno, i drugie</button>
+          </div>
+        </div>
+        <div class="quiz-step" data-step="3">
+          <p class="quiz-question">Kto będzie na imprezie?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="mixed">👨‍👩‍👧‍👦 Mix pokoleń (dzieci, rodzice, dziadkowie)</button>
+            <button class="quiz-opt" data-val="mlodzi">🧑‍🤝‍🧑 Głównie rówieśnicy</button>
+            <button class="quiz-opt" data-val="firma">👔 Środowisko zawodowe</button>
+          </div>
+        </div>
+        <div class="quiz-result" id="quiz-result" style="display:none;">
+          <div class="quiz-result-icon" id="quiz-result-icon">🎵</div>
+          <h3 id="quiz-result-title">Twój styl</h3>
+          <p id="quiz-result-desc"></p>
+          <div class="quiz-result-genres" id="quiz-result-genres"></div>
+          <a href="#contact" class="btn-primary quiz-cta">Zarezerwuj ten klimat →</a>
+          <button class="quiz-restart" id="quiz-restart">Zacznij od nowa</button>
+        </div>
+        <div class="quiz-progress" id="quiz-progress">
+          <div class="quiz-dot active" data-dot="1"></div>
+          <div class="quiz-dot" data-dot="2"></div>
+          <div class="quiz-dot" data-dot="3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="opinie-real" style="overflow: hidden;">
+    <div class="wrap gs-reveal">
+      <div class="sec-header" style="margin-bottom: 30px;">
+        <span class="sec-label">Opinie</span>
+        <h2 class="sec-title">Co mówią<br>moi <em>klienci</em></h2>
+      </div>
+      
+      <div class="swiper reviewSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="scard js-tilt review-card" data-tilt-max="3">
+              <div class="review-quote" aria-hidden="true">"</div>
+              <div class="review-stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+              <p class="review-text">Absolutnie polecamy! DJ Cichy stworzył niesamowitą atmosferę na naszym weselu. Muzyka dopasowana idealnie.</p>
+              <div class="review-author">Ania & Marcin</div>
+              <div class="review-event">Wesele · Kutno 2024</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="scard js-tilt review-card" data-tilt-max="3">
+              <div class="review-quote" aria-hidden="true">"</div>
+              <div class="review-stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+              <p class="review-text">Szymon poprowadził osiemnastkę córki i po prostu zachwycił wszystkich. Niezwykła energia.</p>
+              <div class="review-author">Rodzina Kowalskich</div>
+              <div class="review-event">Osiemnastka · Łęczyca 2024</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="scard js-tilt review-card" data-tilt-max="3">
+              <div class="review-quote" aria-hidden="true">"</div>
+              <div class="review-stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+              <p class="review-text">Gdybym miał robić wesele jeszcze raz, wybrałbym tylko Szymona. Zaplanował wszystko, mieliśmy z głowy.</p>
+              <div class="review-author">Tomek & Kasia</div>
+              <div class="review-event">Wesele · Gostynin 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-header center gs-reveal">
+        <span class="sec-label">Najczęstsze pytania</span>
+        <h2 class="sec-title">F.A.Q<em>.</em></h2>
+      </div>
+      <div class="faq-container gs-stagger">
+        <details class="faq-item">
+          <summary>Gdzie grasz swoje imprezy?</summary>
+          <div class="faq-content">Najczęściej gram na terenie województwa łódzkiego, mazowieckiego i kujawsko-pomorskiego (Kutno, Łódź, Płock, Włocławek). Jestem jednak mobilny i mogę dojechać w dowolne miejsce w Polsce.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Czy możemy sami ułożyć playlistę?</summary>
+          <div class="faq-content">Oczywiście! Zawsze proszę Was o listę ulubionych utworów oraz tych, których absolutnie nie chcecie słyszeć na parkiecie. Resztę dobieram reagując na to, przy czym najlepiej bawią się goście.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Czy prowadzisz zabawy oczepinowe?</summary>
+          <div class="faq-content">Tak, ale wyłącznie zabawy ze smakiem i na poziomie. Unikam żenujących czy wulgarnych konkursów. Formę i rodzaj zabaw ustalamy indywidualnie.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Jak wcześnie trzeba rezerwować termin?</summary>
+          <div class="faq-content">Najpopularniejsze terminy ślubne znikają z 1-2 letnim wyprzedzeniem. W przypadku innych imprez (urodziny, eventy firmowe) często mam wolne terminy na kilka miesięcy przed. Warto pytać przez formularz!</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-info gs-reveal-left">
+          <span class="sec-label">Kontakt</span>
+          <h2 class="sec-title">Zróbmy razem<br>świetną <em>imprezę</em></h2>
+          <p class="contact-desc">Zostaw wiadomość — sprawdzę dostępność terminu i przygotuję niezobowiązującą wycenę.</p>
+          <div class="contact-details">
+            <p><strong>Telefon:</strong> <a href="tel:+48000000000" style="color:var(--text-main); text-decoration:none;">+48 000 000 000</a></p>
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#f09b9f9e84919b84b0949a9399939889de809c" style="color:var(--text-main); text-decoration:none;"><span class="__cf_email__" data-cfemail="650e0a0b11040e1125010f060c060d1c4b1509">[email&#160;protected]</span></a></p>
+            <p><strong>Region:</strong> Kutno, Łódź, Płock, Włocławek</p>
+          </div>
+        </div>
+        <div class="contact-form gs-reveal">
+          <form id="contact-form" action="https://formspree.io/f/TWOJ_ID" method="POST">
+            <div class="input-group">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Adres email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+              <label for="date">Data imprezy</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div class="input-group">
+              <label for="message">Rodzaj imprezy i szczegóły</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <div class="cf-turnstile" data-sitekey="TWOJ_SITE_KEY_CLOUDFLARE" data-theme="dark" style="margin-bottom: 20px;"></div>
+
+            <button type="submit" id="form-btn" class="btn">
+              <span class="btn-text">Wyślij zapytanie →</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+            <div id="form-msg" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">© <span id="footer-year">2026</span> DJ CICHY — Szymon Cicherski · Kutno</div>
+    <div class="footer-right">
+      <a href="polityka-prywatnosci.html">Polityka Prywatności</a>
+      <button id="cursor-toggle" class="cursor-btn">Przełącz kursor</button>
+    </div>
+  </footer>
+</main>
+
+<button id="scrollTopBtn" aria-label="Wróć na górę">
+  <svg class="progress-ring" width="50" height="50">
+    <circle class="progress-ring__circle" stroke="var(--accent)" stroke-width="3" fill="transparent" r="23" cx="25" cy="25"/>
+    <path d="M25 18 L18 25 M25 18 L32 25 M25 18 L25 32" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
