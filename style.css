@@ -32,10 +32,18 @@ body {
 
 /* [PKT 3] Zoptymalizowany filtr szumu nałożony TYLKO na sekcję hero zamiast na całe body */
 .hero::before {
-  content: '';
-  position: absolute; inset: 0; z-index: 2; /* nad wideo, pod contentem */
-  background: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E') repeat;
-  opacity: 0.05; mix-blend-mode: overlay; pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  /* Wygenerowany szum SVG (lekki i ostry jak brzytwa) */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.18; /* Idealny balans widoczności */
+  mix-blend-mode: overlay; /* Kluczowe: profesjonalne mieszanie z warstwą pod spodem */
+  z-index: 2; /* Zawsze nad zdjęciami, pod tekstami */
+  pointer-events: none; /* Absolutnie konieczne, by przyciski działały */
 }
 
 /* [PKT 20] Usunięto niebezpieczne *:focus { outline: none; } dla dostępności */
@@ -178,13 +186,15 @@ nav.scrolled .btn-nav {
 }
 .hero-logo-image.fly-away { opacity: 0; }
 .hero-year { 
-  font-size: clamp(3rem, 8vw, 5rem); 
+  font-family: poppins;
+  font-size: clamp(2rem, 8vw, 3rem); 
   font-weight: 600; color: #fff; 
   display: block;
-  letter-spacing: 0.2em;
-  background: linear-gradient(135deg, var(--text-main), var(--accent-light));
+  letter-spacing: .8em;
+  background: var(--accent-light);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: -1rem;
 }
 
 .mobile-toggle { display: none; background: transparent; border: none; color: var(--text-main); font-size: 24px; z-index: 101; transition: transform 0.3s; }
@@ -246,6 +256,27 @@ main.visible { opacity: 1; }
   position: relative; overflow: hidden;
   perspective: 1200px;
 }
+
+.hero-bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  
+  /* Zwiększono brightness z 25% na 40%, żeby zdjęcia były widoczne */
+  filter: grayscale(95%) brightness(25%);
+}
+
+.hero-bg-slide.active {
+  /* Bardzo mocne krycie zdjęcia (prawie solidne) */
+  opacity: 1; 
+}
+
 .hero-bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; pointer-events: none; z-index: 0; filter: grayscale(100%) contrast(1.2); }
 .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(14,13,11,0.3), var(--bg) 95%); pointer-events: none; z-index: 1; }
 canvas#audio-canvas { position: absolute; bottom: 0; left: 0; width: 100%; height: 200px; opacity: 0.4; pointer-events: none; z-index: 2; }
@@ -262,10 +293,9 @@ canvas#audio-canvas { position: absolute; bottom: 0; left: 0; width: 100%; heigh
 .video-toggle-btn { position: absolute; top: 120px; right: 40px; z-index: 10; background: rgba(0,0,0,0.5); border: 1px solid var(--border); color: #fff; padding: 8px; border-radius: 50%; cursor: pointer; transition: 0.3s; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
 .video-toggle-btn:hover { background: var(--accent); }
 
-.hero-content { 
-  position: relative; z-index: 3; 
-  display: flex; flex-direction: column; align-items: center;
-  transform-style: preserve-3d;
+.hero-content {
+  position: relative;
+  z-index: 3; 
 }
 .hero-tag { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--accent-light); margin-bottom: 24px; display: block; }
 .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 10vw, 90px); font-weight: 300; line-height: 1.05; max-width: 800px; margin: 0 auto 24px; }
@@ -295,7 +325,9 @@ canvas#audio-canvas { position: absolute; bottom: 0; left: 0; width: 100%; heigh
 .sec-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
 .sec-title em { font-style: italic; color: var(--accent-light); }
 .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 0 auto; width: 80%; }
-
+#img-note{
+scale: 90%;
+}
 /* Grid Sekcji */
 .about-grid, .rep-grid, .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 @media(max-width: 900px) { .about-grid, .rep-grid, .contact-grid { grid-template-columns: 10fr; gap: 40px; } }
@@ -308,7 +340,7 @@ canvas#audio-canvas { position: absolute; bottom: 0; left: 0; width: 100%; heigh
 .about-right { position: relative; }
 .about-profile-img { width: 100%; height: auto; border-radius: var(--radius); filter: grayscale(40%); transition: 0.5s; }
 .about-profile-img:hover { filter: grayscale(0%); }
-.about-quote { position: absolute; bottom: -20px; right: -20px; background: var(--surface); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; max-width: 250px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.about-quote { position: absolute; bottom: 15px; right: -15px; background: var(--surface); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; max-width: 250px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
 
 /* Audio Player */
 .custom-audio-wrapper { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-top: 40px; }
@@ -801,4 +833,138 @@ footer { padding: 40px 24px; border-top: 1px solid var(--border); background: va
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* =========================================================
+   PROFESJONALNA RESPONSYWNOŚĆ (MEDIA QUERIES)
+   ========================================================= */
+
+/* --- 1. DUŻE TABLETY I MAŁE LAPTOPY (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  /* Zmniejszamy ogólne paddingi w sekcjach, by zyskać miejsce */
+  section { 
+    padding: 80px 20px; 
+    scroll-margin-top: 70px; 
+  }
+
+  /* Dopasowanie rozmiarów w sekcji Intro */
+  .intro-name { 
+    font-size: clamp(40px, 8vw, 70px); 
+  }
+
+  /* Mniejsze odstępy w nawigacji */
+  nav { padding: 15px 30px; }
+  nav.scrolled { padding: 12px 30px; }
+}
+
+/* --- 2. TABLETY (max-width: 900px) - ROZSZERZENIE TWOJEGO MENU --- */
+@media (max-width: 900px) {
+  /* Skalowanie logo i przycisków w Hero */
+  .hero-logo-image { 
+    max-width: 280px; 
+  }
+  
+  .hero-year {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    letter-spacing: .5em;
+  }
+
+  /* Dostosowanie ukrytego czytnika (sr-only) dla pewności, że nie zaburza układu */
+  .sr-only { 
+    width: 1px; height: 1px; 
+  }
+}
+
+/* --- 3. SMARTFONY W POZIOMIE I MNIEJSZE TABLETY (max-width: 768px) --- */
+@media (max-width: 768px) {
+  section { 
+    padding: 60px 15px; 
+    scroll-margin-top: 60px; 
+  }
+
+  /* Zmniejszenie tekstów wprowadzających w Hero */
+  .hero-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Optymalizacja przycisków i akcji na urządzenia dotykowe */
+  .hero-actions {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+  
+  /* Pasek postępu (scroll) zmniejszony, by nie zasłaniał elementów dotykowych */
+  #scroll-progress {
+    height: 2px;
+  }
+}
+
+/* --- 4. MAŁE SMARTFONY (max-width: 480px) --- */
+@media (max-width: 480px) {
+  /* Bardzo małe ekrany - priorytet na czytelność */
+  section { 
+    padding: 50px 10px; 
+  }
+
+  .hero-logo-image { 
+    max-width: 220px; 
+  }
+
+  .intro-name { 
+    font-size: clamp(32px, 10vw, 46px); 
+  }
+
+  /* Zmniejszamy loader w intro, żeby nie przytłaczał */
+  .loader {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  /* Odsunięcie przycisku do góry ekranu */
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Ukrycie customowego kursora całkowicie na mobilkach (urządzenia touch) */
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   PŁYNNA TYPOGRAFIA DLA CAŁEJ STRONY (Nowoczesny standard)
+   ========================================================= */
+/* Dodaj do głównego obszaru stylów, poza media queries */
+p {
+  font-size: clamp(14px, 2vw, 18px); /* Minimalnie 14px, skaluje się do 18px */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  word-wrap: break-word; /* Zapobiega wychodzeniu długich wyrazów poza ekran */
+}
 }

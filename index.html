@@ -82,13 +82,14 @@
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wesele"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Urodziny"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Studniówka"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Event firmowy"}}
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Event firmowy"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Osiemnastka"}}
     ]
   },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "bestRating": "5",
+    "bestRating": "4.9",
     "ratingCount": "47"
   },
   "sameAs": []
@@ -130,26 +131,24 @@
 </nav>
 
 <main id="main">
-  <section class="hero" id="home">
-    <div class="hero-video-wrap" id="hero-video-wrap">
-      <img 
-        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1920&auto=format&fit=crop&fm=webp" 
-        alt="" 
-        class="hero-bg-video hero-poster" 
-        id="hero-poster"
-        fetchpriority="high"
-      >
-      <video id="hero-video" loop muted playsinline class="hero-bg-video" style="opacity:0; transition: opacity 1s ease;" data-src="https://cdn.pixabay.com/video/2020/05/24/40061-424756855_large.mp4">
-      </video>
-    </div>
+  <section id="home" class="hero">
+    
+   <div class="hero-bg-slider">
+    <div class="hero-bg-slide" style="background-image: url('assets/web4.jpg');"></div>
+    <div class="hero-bg-slide" style="background-image: url('assets/web1.jpg');"></div>
+
+
+  </div>
+
+    <div class="hero-content">
+      </div>
 
     <button id="video-toggle-btn" class="video-toggle-btn" aria-label="Zatrzymaj wideo w tle">⏸</button>
 
-    <div class="hero-content gs-reveal">
+    <div class="hero-content gs-reveal" >
       <span class="hero-tag">Kutno, Łódź, Płock, Włocławek · od 2019</span>
       <h1 class="hero-title gs-reveal gs-split-text" aria-label="DJ Cichy - Twój DJ na wesele i event 2026">
         <img src="assets/logo.png" alt="DJ Cichy Logo" class="hero-logo-image">
-        <span class="hero-year">2026</span>
       </h1>      
       <p class="gs-reveal">Wesela, urodziny, studniówki, eventy firmowe. Muzyka dobrana do każdego gościa — od pierwszego walca po ostatni taniec.</p>
       <div class="hero-actions gs-reveal">
@@ -205,7 +204,7 @@
           </div>
         </div>
         <div class="about-right gs-parallax">
-          <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=800&auto=format&fit=crop&fm=webp" alt="Szymon Cicherski DJ Cichy" class="about-profile-img js-tilt" loading="lazy">
+          <img id="img-note" src="assets/web5.jpg" alt="Szymon Cicherski DJ Cichy" class="about-profile-img js-tilt" loading="lazy">
           <blockquote class="about-quote">"Gram tak, żeby nikt nie siedział przy stołach."</blockquote>
         </div>
       </div>
@@ -299,9 +298,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1533174000224-6a8b2438b320?q=80&w=1920&auto=format&fit=crop&fm=webp">
+            <div class="gallery-slide-item" data-full="assets/web4.jpg">
               <div class="gallery-slide-img-wrap">
-                <img src="https://images.unsplash.com/photo-1533174000224-6a8b2438b320?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Sprzęt DJ-ski i oświetlenie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+                <img src="assets/web4.jpg" alt="Sprzęt DJ-ski i oświetlenie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
               </div>
               <div class="gallery-slide-info">
                 <span class="gallery-slide-label">Setup</span>
@@ -310,9 +309,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1470229722913-7c090be5f524?q=80&w=1920&auto=format&fit=crop&fm=webp">
+            <div class="gallery-slide-item" data-full="assets/web3.jpg">
               <div class="gallery-slide-img-wrap">
-                <img src="https://images.unsplash.com/photo-1470229722913-7c090be5f524?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Światła na parkiecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+                <img src="assets/web3.jpg" alt="Światła na parkiecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
               </div>
               <div class="gallery-slide-info">
                 <span class="gallery-slide-label">Event</span>
@@ -332,9 +331,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=1920&auto=format&fit=crop&fm=webp">
+            <div class="gallery-slide-item" data-full="assets/web2.jpg">
               <div class="gallery-slide-img-wrap">
-                <img src="https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=900&auto=format&fit=crop&fm=webp" alt="DJ przy konsolecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+                <img src="assets/web2.jpg" alt="DJ przy konsolecie" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
               </div>
               <div class="gallery-slide-info">
                 <span class="gallery-slide-label">Konsola DJ</span>
@@ -343,9 +342,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="gallery-slide-item" data-full="https://images.unsplash.com/photo-1598387993441-a364f854cffd?q=80&w=1920&auto=format&fit=crop&fm=webp">
+            <div class="gallery-slide-item" data-full="assets/web1.jpg">
               <div class="gallery-slide-img-wrap">
-                <img src="https://images.unsplash.com/photo-1598387993441-a364f854cffd?q=80&w=900&auto=format&fit=crop&fm=webp" alt="Parkiet taneczny" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
+                <img src="assets/web1.jpg" alt="Parkiet taneczny" class="gallery-slide-img" loading="lazy" referrerpolicy="no-referrer">
               </div>
               <div class="gallery-slide-info">
                 <span class="gallery-slide-label">Parkiet</span>

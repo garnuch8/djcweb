@@ -891,7 +891,29 @@
       }
     };
     // Start po intro (ok. 2.5s)
-    setTimeout(type, 2500);
+    setTimeout(type, 2000);
+  }
+
+  /* ========================================================= */
+  /* --- NOWY KOD DLA SLIDERA W TLE HERO (PRZENIKANIE ZDJĘĆ) --- */
+  /* ========================================================= */
+  const heroSlides = document.querySelectorAll('.hero-bg-slide');
+  
+  // Jeśli na stronie jest JAKIEKOLWIEK zdjęcie (jedno lub więcej)
+  if (heroSlides.length > 0) {
+    // Zawsze upewnij się, że pierwsze zdjęcie na liście jest od razu widoczne
+    heroSlides[0].classList.add('active');
+  }
+
+  // Uruchom pętlę ze zmianą TYLKO wtedy, gdy zdjęć jest więcej niż 1
+  if (heroSlides.length > 1) {
+    let currentHeroSlide = 0;
+    
+    setInterval(() => {
+      heroSlides[currentHeroSlide].classList.remove('active');
+      currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+      heroSlides[currentHeroSlide].classList.add('active');
+    }, 8000); // Zmiana co 8 sekund
   }
 
 })();
